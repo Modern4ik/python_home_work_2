@@ -14,11 +14,9 @@ def get_value_from_user(message):
                 flag = False
             else:
                 print("Ошибка.Число не должно быть равно или меньше 0")
-                continue
-
+                
         except ValueError:
             print("Ошибка.Введите число, а не буквы.")
-            continue
         
     return user_value
 
