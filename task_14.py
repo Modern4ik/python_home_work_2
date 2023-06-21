@@ -2,14 +2,10 @@
 
 limit = int(input("Введите предел для вывода целых степеней числа 2: "))
 
-i = 0
-result = [1]
-result[i] = 1 
+pow = 0
 
-while result[i] * 2 <= limit:
-    result.append(result[i] * 2)
+while pow ** 2 <= limit:
+    print(2 ** pow, end = " ")
 
-    i += 1
-     
-print(f"Все целые степени двойки в заданном пределе - {result}")
-    
+    pow += 1
+
